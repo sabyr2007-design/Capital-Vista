@@ -1,0 +1,126 @@
+:root {
+    --main-blue: #123a7a;
+    --dark-blue: #0d2a5c;
+    --light-blue: #e8f0fe;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+}
+
+.site-navbar {
+    background-color: var(--main-blue);
+}
+
+.hero {
+    background-color: var(--dark-blue);
+    color: #ffffff;
+}
+
+.section-title {
+    color: var(--main-blue);
+}
+
+.service-card {
+    border: 1px solid #dddddd;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.site-footer {
+    background-color: var(--main-blue);
+    color: #ffffff;
+}
+
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--main-blue);
+    --bs-btn-border-color: var(--main-blue);
+    --bs-btn-hover-bg: var(--dark-blue);
+    --bs-btn-hover-border-color: var(--dark-blue);
+    --bs-btn-active-bg: var(--dark-blue);
+    --bs-btn-active-border-color: var(--dark-blue);
+}
+
+.page-header {
+    background-color: var(--light-blue);
+}
+
+.team-card {
+    border: 1px solid #dddddd;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Аккордеон */
+.accordion-menu {
+    max-width: 700px;
+}
+
+.accordion-item {
+    border: 1px solid #cccccc;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: var(--main-blue);
+    color: #ffffff;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-header::after {
+    content: "+";
+}
+
+.accordion-header.open::after {
+    content: "−";
+}
+
+.accordion-body {
+    display: none;
+    padding: 0 16px;
+    background-color: #ffffff;
+}
+
+/* Карусель */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(13, 42, 92, 0.75);
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+@media (max-width: 600px) {
+    .carousel-item img {
+        height: 240px;
+    }
+}
